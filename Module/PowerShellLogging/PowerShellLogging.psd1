@@ -17,11 +17,11 @@ ModuleVersion = '1.2.1'
 # ID used to uniquely identify this module
 GUID = '345320b5-bdc3-4ab6-a13e-fcb019362fe6'
 
-CompanyName = 'Home'
-CopyRight = 'Copyright 2014 David Wyatt'
+CompanyName = 'Avanade Inc.'
+CopyRight = 'Copyright 2016 Avanade Inc.'
 
 # Author of this module
-Author = 'Dave Wyatt'
+Author = 'Avanade Inc.'
 
 # Description of the functionality provided by this module
 Description = 'Captures PowerShell console output to a log file.'

@@ -28,6 +28,10 @@ namespace PSLogging
             ErrorCallback = errorCallback;
         }
 
+        ~LogFile()
+        {
+            File.AppendAllText(System.IO.Path.Combine(path, fileName), $"\r\n******************\r\nScript Ended: {DateTime.UtcNow.ToString(DateTimeFormat)} \r\n******************\r\n");
+        }
         #endregion
         
         #region Properties
@@ -188,7 +192,7 @@ namespace PSLogging
 
         #region Private Methods
 
-        private void CheckDirectory()
+        public void CheckDirectory()
         {
             if (!String.IsNullOrEmpty(path) && !Directory.Exists(path))
             {
